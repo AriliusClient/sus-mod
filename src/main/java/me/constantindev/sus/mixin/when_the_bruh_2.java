@@ -14,17 +14,21 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(Identifier.class)
 public class when_the_bruh_2 {
     @Mutable
-    @Shadow @Final protected String namespace;
+    @Shadow
+    @Final
+    protected String namespace;
 
     @Mutable
-    @Shadow @Final protected String path;
+    @Shadow
+    @Final
+    protected String path;
 
-    @Inject(method="<init>(Ljava/lang/String;)V",at = @At("TAIL"))
+    @Inject(method = "<init>(Ljava/lang/String;)V", at = @At("TAIL"))
     public void gp(String id, CallbackInfo ci) {
         boolean replace = false;
         String replacement = "amogusCharacter.png";
         CustomTexture full = null;
-        for(CustomTexture t : Config.textures2replace) {
+        for (CustomTexture t : Config.textures2replace) {
             if (id.equals(t.replaces)) {
                 replace = true;
                 replacement = t.replacement;

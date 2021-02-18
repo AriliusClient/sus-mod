@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(SplashTextResourceSupplier.class)
 public class custom_splashes {
-    @Inject(method="get",at=@At("HEAD"),cancellable = true)
+    @Inject(method = "get", at = @At("HEAD"), cancellable = true)
     public void retCustomSplash(CallbackInfoReturnable<String> cir) {
         cir.setReturnValue("§camogus");
     }

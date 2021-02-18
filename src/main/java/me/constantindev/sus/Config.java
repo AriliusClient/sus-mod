@@ -5,7 +5,7 @@ public class Config {
             new CustomTexture("textures/gui/title/mojangstudios.png"),
             new CustomTexture("textures/gui/title/background/panorama_overlay.png"),
             new CustomTexture("textures/gui/title/minecraft.png"),
-            new CustomTexture("textures/gui/widgets.png","suswidgets.png"),
-            new CustomTexture("textures/gui/accessibility.png","susaccessibility.png")
+            new CustomTexture("textures/gui/widgets.png", "suswidgets.png"),
+            new CustomTexture("textures/gui/accessibility.png", "susaccessibility.png")
     };
 }
