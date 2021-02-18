@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "sus",
+  "version": "${version}",
+  "name": "Sus",
+  "description": ":flushed:",
+  "authors": [
+    "Corndev"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/sus/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.constantindev.sus.Sus"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [
+    "sus.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*"
+  }
+}

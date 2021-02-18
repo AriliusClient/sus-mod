@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "me.constantindev.sus.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "custom_splashes",
+    "god",
+    "When_the_bruh",
+    "when_the_bruh_2"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
